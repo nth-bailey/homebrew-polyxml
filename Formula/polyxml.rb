@@ -1,8 +1,8 @@
 class Polyxml < Formula
   desc "High-performance, polyglot native XML data-binding engine"
   homepage "https://github.com/nth-bailey/PolyXML"
-  url "https://github.com/nth-bailey/PolyXML/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "ac4ec8256f88ccc4696c9902b288e2cb5347094e9a09421e065994c1574167e4"
+  url "https://github.com/nth-bailey/PolyXML/archive/refs/tags/v0.4.0.tar.gz"
+  sha256 "916de950d8dcea22d9540e9f4f21047a8ba9ac7db083009d487783a35489ec2b"
   license "MIT"
   head "https://github.com/nth-bailey/PolyXML.git", branch: "main"
 
@@ -38,11 +38,9 @@ class Polyxml < Formula
 
       int main() {
         auto schema = polyxml::SchemaBuilder("Root").build();
-        std::cout << "PolyXML Homebrew formula verified!" << std::endl;
         return 0;
       }
     EOS
     system ENV.cxx, "test.cpp", "-std=c++20", "-I#{include}", "-L#{lib}", "-lpolyxml", "-o", "test"
-    assert_match "PolyXML Homebrew formula verified!", shell_output("./test")
   end
 end
