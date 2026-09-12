@@ -1,8 +1,8 @@
 class Polyxml < Formula
   desc "High-performance, polyglot native XML data-binding engine"
   homepage "https://github.com/nth-bailey/PolyXML"
-  url "https://github.com/nth-bailey/PolyXML/archive/refs/tags/v0.5.1.tar.gz"
-  sha256 "2adb718ff1cea6c1e32694886b89811d3e43094574f6ab949080d93ed92a78db"
+  url "https://github.com/nth-bailey/PolyXML/archive/refs/tags/v0.6.0.tar.gz"
+  sha256 "e49e09252501e9884eff9b8b85af5970740988e3cf94b5777ec83a17c23057fa"
   license "MIT"
   head "https://github.com/nth-bailey/PolyXML.git", branch: "main"
 
